@@ -1,12 +1,15 @@
 import "./App.css";
+import { Hero } from "./Components/Hero";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold text-red-600">
-        Arrancando Integrador de react
-      </h1>
-    </>
+    <Hero
+      title="Tu universo de cómics en un solo lugar!"
+      subtitle="Explora nuestro amplio catálogo!."
+      backgroundImage="/public/FondoHero.jpeg"
+      buttonLabel="Explore Now"
+      onButtonClick={() => alert("Button clicked!")}
+    />
   );
 }
 
